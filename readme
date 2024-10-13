@@ -1,0 +1,45 @@
+flex is used to make content in rows 
+we used flex direction to make it in column 
+align-item is used to make teh things on the center part
+margin-top is margin from the top side
+
+# Key Press Tracking Application
+
+This project is a simple web-based key press tracking application. It listens for `keydown` and `keyup` events and logs the key presses and releases, displaying the information in real-time on the webpage.
+
+## Features
+
+- Start and stop tracking of key presses and releases.
+- Displays the specific key pressed or released.
+- Updates the UI to show the current key state (pressed down or released).
+
+## How It Works
+
+- When the **Start** button is clicked, the app begins listening for key events on the document.
+- Key press (`keydown`) and key release (`keyup`) events are captured and displayed in real-time.
+- Clicking the **Stop** button stops the event listeners and clears the log.
+- The start and stop buttons are enabled/disabled based on the current state.
+
+## Usage
+
+1. Open the HTML file in a browser.
+2. Click the **Start** button to begin tracking key events.
+3. Press and release any key on the keyboard. The application will display:
+   - The key that was pressed.
+   - Whether the key is currently pressed or released.
+4. Click the **Stop** button to stop tracking.
+
+## Code Explanation
+
+### HTML Structure
+
+The app uses simple HTML elements:
+- A `div` to display the log of key events.
+- A `div` to display the state of the key (whether it's down or up).
+- Two buttons: one to start and one to stop the event tracking.
+
+```html
+<div id="log"></div>
+<div id="state"></div>
+<button id="start-btn">Start</button>
+<button id="stop-btn" disabled>Stop</button>
